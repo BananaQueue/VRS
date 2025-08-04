@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Request</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Header -->
+        <div class="header">
+            <h1>Vehicle Request System</h1>
+            <p><a href="login.html"><button>LOG IN</button></a> | <a href="/signup"><button>SIGN UP</button></a></p>
+        </div>
+
+        <!-- Main Cards Grid -->
+        <div class="cards-grid">
+            
+            <div class="card metric-card status-assigned" id="car1">
+                
+                <div class="metric-icon">🚗</div>
+                <div class="plate-number">AAA1234</div>
+                <div class="driver-name">Juan Uno</div>
+                
+                <div class="request-button"><a href="/request"><button>Request</button></a></div>
+            </div>
+
+            
+            <div class="card metric-card status-unassigned" id="car2">
+                
+                <div class="metric-icon">🚐</div>
+                <div class="plate-number">ABC1234</div>
+                <div class="driver-name">Tuoh Dos</div>
+                
+                <div class="request-button"><a href="/request"><button>Request</button></a></div>
+            </div>
+
+            
+            <div class="card metric-card status-unassigned" id="car3">
+                
+                <div class="metric-icon">🚙</div>
+                <div class="plate-number">ABCD1234</div>
+                <div class="driver-name">Thre Tres</div>
+                
+                <div class="request-button"><a href="/request"><button>Request</button></a></div>
+            </div>
+
+            
+            <div class="card metric-card status-returning" id="car4">
+                
+                <div class="metric-icon">🏎️</div>
+                <div class="plate-number">DCBA4321</div>
+                <div class="driver-name">Phor Quatro</div>
+                
+                <div class="request-button"><a href="/request"><button>Request</button></a></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

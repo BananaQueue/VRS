@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background: linear-gradient(135deg, #66a1ea 0%, #936cd7 100%); */
+    background-color: #66a1ea;
+    min-height: 100vh;
+    padding: 20px;
+    /* color: #1c232f; */
+    display: flex;
+   
+    
+}
+
+
+.dashboard {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    animation: fadeInDown 1s ease-out;
+}
+
+.header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    animation: fadeInUp 1s ease-out 0.2s both;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+p > a > button{
+    font-weight: 700;
+    color:#2d3748;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: white;
+    border-color: whitesmoke;
+}
+
+p > a > button:hover{
+    background-color: #667eea;
+    color: aliceblue;
+}
+.request-button {
+    font-size: 0.90rem;
+    font-weight: 500;
+    min-width: 120px;
+    margin-top: 10px;
+    
+}
+.request-button button{
+    padding: 8px;
+    font-size: 1rem;
+    border: none;
+    /* border-radius: 10px 10px 0 0; */
+    
+    color: #171c24;
+    
+    
+}
+
+.request-button button:hover{
+    cursor: pointer;
+    background-color: #66a1ea;
+    border:none;
+    color: #ffffff;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 4px 15px rgba(218, 222, 236, 0.682);
+}
+
+.cards-grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px;
+    
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.95);
+    height: 248px;
+    width: 300px;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: none;
+    transition: all 0.2s ease;
+    /* box-sizing: border-box; */
+    animation: fadeInUp 1s ease-out 0.2s both;
+   margin:10px;
+}
+
+.status-unassigned{
+    background: radial-gradient(circle,rgba(37, 194, 66, 1) 0%, rgba(96, 204, 128, 1) 100%);
+    box-shadow: 8px 10px 5px #368d30;
+    box-sizing: border-box;
+}
+
+.status-unassigned:hover {
+    border: 1px solid rgb(2, 190, 24);
+    background: radial-gradient(circle,rgba(96, 204, 128, 1) 0%, rgba(37, 194, 66, 1) 100%);
+}
+
+.status-assigned{
+    background: radial-gradient(circle,rgb(194, 42, 37) 0%, rgb(204, 125, 96) 100%);
+    box-sizing: border-box;
+    box-shadow: 8px 10px 5px #8d3030;
+}
+
+.status-returning{
+    background: radial-gradient(circle,rgb(194, 186, 37) 0%, rgb(204, 199, 96) 100%);
+    box-sizing: border-box;
+    box-shadow: 8px 10px 5px #8d8a30;
+}
+
+
+.metric-card {
+    text-align: center; 
+}
+
+.metric-icon {
+    width: 80%;
+    height: 70px;
+    margin: 0 auto 20px;
+    /* background: white; */
+    /* border-radius: 40%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    border: 3px dashed white;
+    box-shadow: 0 4px 15px rgba(218, 222, 236, 0.682);
+}
+
+.plate-number {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #161837;
+    margin-top: -5px;
+}
+
+.driver-name {
+    font-size: 0.95rem;
+    color: #24262a;
+    font-weight: 500;
+    min-width: 120px;
+    margin: 0;
+}
